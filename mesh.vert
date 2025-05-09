@@ -42,7 +42,7 @@ vec3[] vertices = vec3[36](
 );
 
 void main() {
-    vec4 vertex = vec4(vertices[gl_VertexID].x, vertices[gl_VertexID].y, vertices[gl_VertexID].z, 1);
+  vec4 vertex = vec4(vertices[gl_VertexID].x, vertices[gl_VertexID].y, vertices[gl_VertexID].z, 1);
 
-    gl_Position = p3d_ModelViewProjectionMatrix * vertex;
+  gl_Position = p3d_ModelViewProjectionMatrix * vertex;
 }
